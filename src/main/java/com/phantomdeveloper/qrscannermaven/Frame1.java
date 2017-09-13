@@ -57,11 +57,11 @@ public class Frame1 extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
+Manual manual= new Manual();
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
         
-        Manual manual= new Manual();
+        
         manual.setLocationRelativeTo(null);
         manual.setVisible(true);
     }//GEN-LAST:event_jButton1ActionPerformed
@@ -96,7 +96,10 @@ public class Frame1 extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new Frame1().setVisible(true);
+//                new Frame1().setVisible(true);
+                Frame1 f = new Frame1();
+                f.setLocationRelativeTo(null);
+                f.setVisible(true);
             }
         });
     }
